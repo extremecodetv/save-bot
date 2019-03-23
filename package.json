@@ -1,0 +1,22 @@
+{
+  "name": "save-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./bin/bash",
+  "scripts": {
+    "start": "npm run ./bin/bash"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "async-lock": "^1.2.0",
+    "dotenv": "^7.0.0",
+    "mongoose": "^5.4.19",
+    "node-telegram-bot-api": "^0.30.0",
+    "require-all": "^3.0.0",
+    "socks5-https-client": "^1.2.1",
+    "standard": "^12.0.1"
+  }
+}
