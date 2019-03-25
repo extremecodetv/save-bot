@@ -18,6 +18,9 @@ const replyHashTag = async (name) => {
     } else {
       await bot.forwardMessage(chatId, chatId, data.message_id)
     }
+
+    tag.count += 1
+    await tag.save()
   } catch (e) {
     throw e
   }
