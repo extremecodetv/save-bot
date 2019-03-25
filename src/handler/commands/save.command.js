@@ -10,6 +10,10 @@ module.exports = async (msg) => {
       return
     }
 
+    if (reply.text && reply.text.indexOf('@artemdontsov') !== -1) { // Ибо за#@!ли
+      return
+    }
+
     const res = await HashTag.create({
       hashtag: name,
       data: reply
