@@ -20,6 +20,7 @@ const replyHashTag = async (name) => {
     }
 
     tag.count += 1
+    tag.updated = Date.now()
     await tag.save()
   } catch (e) {
     throw e
