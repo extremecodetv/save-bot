@@ -6,6 +6,10 @@ require('./models')
 
 const lock = new AsyncLock()
 const handleAsync = (msg) => {
+  if (msg.chat.id !== -1001121056081) { // hardcoded chat id D:
+    return
+  }
+
   lock.acquire('message', async () => {
     await handle(msg)
   })
